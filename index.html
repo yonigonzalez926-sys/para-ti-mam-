@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta para Mamá - Lluvia de Ranas Kawaii</title>
+    <!-- Fuente estilo manuscrita de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #d8f3dc;
+            background-image: radial-gradient(#b7e4c7 15%, transparent 16%);
+            background-size: 50px 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Animación de lluvia de elementos kawaii */
+        .rain-item {
+            position: absolute;
+            top: -10%;
+            font-size: 1.8rem;
+            user-select: none;
+            pointer-events: none;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-10vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.8;
+            }
+            90% {
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(110vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        .carta {
+            background-color: #fffef9;
+            padding: 40px;
+            width: 380px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(46, 125, 50, 0.2);
+            border: 3px dashed #52b788;
+            position: relative;
+            z-index: 10;
+        }
+
+        h2 {
+            font-family: 'Caveat', cursive;
+            color: #2d6a4f;
+            text-align: center;
+            font-size: 2.6rem;
+            margin-top: 0;
+            text-shadow: 1px 1px 2px #d8f3dc;
+        }
+
+        p {
+            font-family: 'Caveat', cursive;
+            color: #1b4332; /* Tinta verde oscura estilo pluma */
+            font-size: 1.7rem;
+            line-height: 1.5;
+            white-space: pre-line;
+            margin: 0;
+        }
+
+        .kawaii-frog-icon {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: -10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Lluvia de ranitas y hojitas kawaii -->
+    <div class="rain-item" style="left: 5%; animation-duration: 4s; animation-delay: 0s;">🐸</div>
+    <div class="rain-item" style="left: 15%; animation-duration: 6s; animation-delay: 2s;">🌿</div>
+    <div class="rain-item" style="left: 25%; animation-duration: 3.5s; animation-delay: 1s;">✨</div>
+    <div class="rain-item" style="left: 35%; animation-duration: 5s; animation-delay: 3s;">🐸</div>
+    <div class="rain-item" style="left: 45%; animation-duration: 4.5s; animation-delay: 0.5s;">💧</div>
+    <div class="rain-item" style="left: 55%; animation-duration: 6s; animation-delay: 1.5s;">🌿</div>
+    <div class="rain-item" style="left: 65%; animation-duration: 3.8s; animation-delay: 2.5s;">🐸</div>
+    <div class="rain-item" style="left: 75%; animation-duration: 5.2s; animation-delay: 0.2s;">✨</div>
+    <div class="rain-item" style="left: 85%; animation-duration: 4.2s; animation-delay: 1.8s;">💧</div>
+    <div class="rain-item" style="left: 92%; animation-duration: 5.8s; animation-delay: 0.8s;">🐸</div>
+
+    <div class="carta">
+        <div class="kawaii-frog-icon">🐸 🌸 🐸</div>
+        <h2>Para ti, Mamá</h2>
+        <p>Querida mamá:
+
+        Quiero aprovechar este momento para decirte cuánto te amo y lo agradecido(a) que estoy por todo lo que haces por mí. Gracias por tu paciencia infinita, por tus abrazos y por ser siempre mi refugio más seguro.
+
+        A veces no te lo digo tan seguido, pero admiro muchísimo tu fuerza y tu gran corazón. 
+
+        Te quiero con todo mi corazón.
+
+        Con todo mi amor,
+        Tu hijo(a)</p>
+    </div>
+
+</body>
+</html>
